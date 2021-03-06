@@ -4,8 +4,36 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "ts-node build.ts"
+  },
+  "_moduleAliases": {
+    "@server": "src/package/freeroam/core",
+    "@client": "src/client_packages/freeroam/core"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@types/fs-extra": "^9.0.8",
+    "@types/node": "^14.14.21",
+    "@types/ragemp-s": "github:CocaColaBear/types-ragemp-s#master",
+    "@types/supertest": "^2.0.10",
+    "@typescript-eslint/eslint-plugin": "^4.14.0",
+    "@typescript-eslint/parser": "^4.14.0",
+    "eslint": "^7.18.0",
+    "find": "^0.3.0",
+    "fs-extra": "^9.0.1",
+    "jasmine": "^3.6.3",
+    "nodemon": "^2.0.7",
+    "supertest": "^6.1.1",
+    "ts-node": "^9.1.1",
+    "tsconfig-paths": "^3.9.0",
+    "typescript": "^4.1.3"
+  },
+  "dependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.21.1",
+    "jet-logger": "^1.0.4"
+  }
 }
