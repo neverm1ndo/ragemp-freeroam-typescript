@@ -17,8 +17,9 @@ logger.timestamp = false;
     try {
         // Remove current build
         await remove('./dist/');
-        // Copy production env file
+        // Copy production env and conf file
         await copy('./src/packages/freeroam/environment/production.env', './dist/packages/freeroam/environment/production.env');
+        await copy('./src/packages/freeroam/conf.json', './dist/packages/freeroam/conf.json');
         // Copy back-end files
         await exec('tsc --build tsconfig.prod.json', './')
     } catch (err) {
