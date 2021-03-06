@@ -8,7 +8,7 @@
     "build": "ts-node build.ts"
   },
   "_moduleAliases": {
-    "@server": "src/package/freeroam/core",
+    "@server": "src/packages/freeroam/core",
     "@client": "src/client_packages/freeroam/core"
   },
   "author": "",
