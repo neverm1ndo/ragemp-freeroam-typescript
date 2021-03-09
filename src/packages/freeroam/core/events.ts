@@ -1,5 +1,5 @@
-const SPAWN_POINTS = require('./configs/spawn_points.json').SpawnPoints;
-const SKINS = require('./configs/skins.json').Skins;
+const SPAWN_POINTS = require('../configs/spawn_points.json').SpawnPoints;
+const SKINS = require('../configs/skins.json').Skins;
 
 /* !!! REMOVE AFTER FIX (TRIGGERED FROM SERVER) !!! */
 mp.events.add('playerEnteredVehicle', (player) => {
