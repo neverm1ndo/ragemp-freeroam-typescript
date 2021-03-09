@@ -1,2 +1,2 @@
-require('@server/commands');
-require('@core/events');
+require('./core/commands');
+require('./core/events');
