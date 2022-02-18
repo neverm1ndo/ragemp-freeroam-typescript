@@ -1,1 +1,1 @@
-RageMP freeraom server
+RageMP freeroam server
